@@ -1,0 +1,445 @@
+[
+  {
+    "tool": "image_gen.imagegen (built-in)",
+    "useCase": "background-extraction",
+    "source": "portrait.webp",
+    "sourceOriginal": "WhatsApp Image 2026-10-11 at 9.22.59 PM (3).jpeg",
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-b44d3d2b-5bbd-4db7-9072-f48c73e4a078.png",
+    "outputPng": "hero-cutout.png",
+    "outputWebp": "hero-cutout.webp",
+    "prompt": "Use case: background-extraction. Asset type: transparent photograph cutout for a personal website hero. Edit target: the referenced original photograph of Alex in a dark blue university suit with tie. Primary request: remove ONLY the teal studio background and make every background pixel genuinely transparent. Keep the actual photographed Alex pixel-faithful: exact same face, eyes, nose, mouth, expression, skin texture, haircut, hairline, ears, neck, shoulders, torso, hands, body shape, pose, suit, shirt, tie, university patch, colors and original lighting. Do not beautify, redraw, stylize, retouch, relight, age, reshape, re-pose, or change any facial feature. Preserve all photographed subject that exists in the source and the original framing; no added body parts. Hair and clothing edge mask should be clean with soft natural antialiasing, no teal spill and no halo. Output one isolated photographic person only, on real alpha transparency; no shadows, backdrop, checkerboard baked into pixels, text or extra objects. The website will handle closeup cropping, so preserve the source framing.",
+    "transparency": true,
+    "dimensions": [
+      1087,
+      1447
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaBBox": [
+      33,
+      21,
+      1073,
+      1447
+    ],
+    "opaqueBBox": [
+      195,
+      112,
+      887,
+      1447
+    ],
+    "bytesWebp": 141428,
+    "bytesPng": 1101602
+  },
+  {
+    "id": "natural2",
+    "source": "portrait-natural.webp",
+    "sourceOriginal": "IMG-20251117-WA0017.jpg",
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-cfd84382-4ae2-481f-80a0-97b3f50c93d7.png",
+    "outputPng": "natural-cutout.png",
+    "outputWebp": "natural-cutout.webp",
+    "tool": "image_gen.imagegen (built-in)",
+    "useCase": "background-extraction",
+    "prompt": "BACKGROUND EXTRACTION ONLY. The input image is the edit target, an existing real photograph. Delete the room/windows/walls to actual alpha transparency. Retain Alex from this photograph exactly as photographed, with the same original dark lighting, exact face, hair, suit, white shirt, belt, hands and pose. This is a cutout, not a newly generated portrait: do not redraw or improve the person; preserve the original RGB detail of the subject. Keep the existing photographic crop, no extra body parts, no expression change. Outside the person's precise silhouette, alpha must be 0. There must be NO glow, NO haze, NO blurred former background, NO shadow or halo around the person. Only the hair/clothing edge can have narrow natural antialiasing. Transparent background truly empty, no scenery, text or extra people.",
+    "transparency": true,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaBBox": [
+      39,
+      19,
+      1412,
+      1024
+    ],
+    "opaqueBBox": [
+      501,
+      157,
+      1099,
+      1024
+    ],
+    "bytesWebp": 70264,
+    "bytesPng": 1072804
+  },
+  {
+    "id": "speaker",
+    "source": "WhatsApp Image 2026-10-11 at 9.22.56 PM.jpeg",
+    "sourceOriginal": "WhatsApp Image 2026-10-11 at 9.22.56 PM.jpeg",
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-730616d7-a8ee-4fd8-9c8a-b618ece53907.png",
+    "outputPng": "speaker-talk-cutout.png",
+    "outputWebp": "speaker-talk-cutout.webp",
+    "tool": "image_gen.imagegen (built-in)",
+    "useCase": "background-extraction",
+    "prompt": "Use case: background-extraction. Asset type: transparent speaker photograph cutout for a personal branding website. Edit target: the referenced photo of Alex explaining on stage in a blue jacket, with left hand extended holding a presentation clicker and right hand holding a microphone. Primary request: remove ONLY the entire stage background, projected images and silhouettes to real transparency. Keep the photographed Alex identity and speaking pose exactly: same face and open-mouth expression, eyes, nose, lips, hair, skin, body proportions, hand gestures, microphone, clicker, jacket with name badge, shirt, tie, trousers, fabric texture, colors and original blue stage lighting. No changes to face, no beautification, no retouching, no new pose, no stylization, no added fingers or body parts. Keep the existing source framing and all existing photographed subject and handheld equipment. Remove all background people/silhouettes as part of background removal. Preserve natural antialiased hair and clothing edges with no blue background halo. Output one real photographic person alone on genuinely transparent alpha, no background, no artificial shadow, no text, no checkerboard baked into image.",
+    "transparency": true,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaBBox": [
+      0,
+      9,
+      1004,
+      1536
+    ],
+    "opaqueBBox": [
+      40,
+      172,
+      845,
+      1536
+    ],
+    "bytesWebp": 265456,
+    "bytesPng": 1844385
+  },
+  {
+    "outputWebp": "head-left90.webp",
+    "outputPng": "head-left90.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: -90 degrees yaw; nose points LEFT in the image. Exact full side profile: only near eye visible, nose/chin/ear form true90-degree silhouette, do not show frontal far eye.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-d05335dd-22d8-451a-bfe3-e638a3151135.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": -90
+  },
+  {
+    "outputWebp": "head-left67.webp",
+    "outputPng": "head-left67.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: -67.5 degrees yaw; nose points LEFT in the image. Strong near-profile, far eye mostly occluded.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-a52fa67c-aec6-4325-bca9-d4004aaa9573.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": -67.5
+  },
+  {
+    "outputWebp": "head-left45.webp",
+    "outputPng": "head-left45.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: -45 degrees yaw; nose points LEFT in the image. Clear three-quarter angle, anatomically plausible visible far eye.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-e2111ff4-f1ca-4c7f-9801-286887f5815a.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": -45
+  },
+  {
+    "outputWebp": "head-left22.webp",
+    "outputPng": "head-left22.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: -22.5 degrees yaw; nose points LEFT in the image. Gentle slight head turn away from camera.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-065ec4f7-90c9-4a32-acc2-292766cc4d74.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": -22.5
+  },
+  {
+    "outputWebp": "head-front.webp",
+    "outputPng": "head-front.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: 0 degrees, face straight at camera. Preserve input1 frontal face exactly.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-a0176cbe-50af-4db0-b282-1adb9b191df2.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": 0
+  },
+  {
+    "outputWebp": "head-right22.webp",
+    "outputPng": "head-right22.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: 22.5 degrees yaw; nose points RIGHT in the image. Gentle slight head turn away from camera.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-10df14f9-40f8-42b3-b968-f79a979b45e3.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": 22.5
+  },
+  {
+    "outputWebp": "head-right45.webp",
+    "outputPng": "head-right45.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: 45 degrees yaw; nose points RIGHT in the image. Clear three-quarter angle, anatomically plausible visible far eye.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-59aa8f1f-44c0-464f-a47b-b5dd8c19ba2e.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": 45
+  },
+  {
+    "outputWebp": "head-right67.webp",
+    "outputPng": "head-right67.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: 67.5 degrees yaw; nose points RIGHT in the image. Strong near-profile, far eye mostly occluded.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-cfe83f2f-23a2-4658-8731-98be58986ab6.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": 67.5
+  },
+  {
+    "outputWebp": "head-right90.webp",
+    "outputPng": "head-right90.png",
+    "useCase": "identity-preserve",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Asset: one view in a photorealistic isolated-head turntable for Alex's personal website. Input 1 is the primary identity reference and exact front portrait of Alex. Input 2 is his actual left-looking three-quarter portrait; input 3 his actual right-looking three-quarter portrait. Preserve THIS exact young Indonesian man's identity: same facial proportions, eyes, brows, nose shape, lips, jaw, ears, hairline and thick side-parted black haircut. Retain human photographic skin texture and subtle closed-mouth expression. Do not use another person, do not beautify or age him, no stylization or plastic skin. Show HEAD AND NECK ONLY as a clean floating photographic cutout: remove all shoulders, clothing, torso, collar and tie; end the neck at a neat natural flat base. Genuinely transparent alpha background, no props, no text, no shadow, no halo. Uniform soft front-left studio lighting consistent with input1. Composition MUST be a square 1024 by1024 canvas, same virtual camera and same head size for this turntable series: hair top at y100, eye level y420, chin y680, neck base y870, central neck axis x512. Level head, no pitch or roll. Keep same neck anchor/head scale and change only yaw. This image is a single view, never a contact sheet. VIEW ANGLE: 90 degrees yaw; nose points RIGHT in the image. Exact full side profile: only near eye visible, nose/chin/ear form true90-degree silhouette, do not show frontal far eye.",
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\hero-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.png",
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\editorial.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-726745b9-68b5-46df-9f14-d89655d2e321.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "angle": 90
+  },
+  {
+    "id": "natural-retouched",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "alpha": true,
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\natural-cutout.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-82d5bb3d-cba3-4119-b284-1710cc072567.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: identity-preserve. Edit ONLY the dark under-eye bags/dark circles in the supplied transparent photograph of Alex in a black suit. Gently reduce the dark discolored shadows immediately beneath both eyes so he looks rested; keep subtle natural under-eye texture. Preserve everything else exactly: same face geometry, eyes and eye size, expression, nose, lips, eyebrows, jaw, ears, hair, skin color and pores, pose, black suit, white shirt, hands, belt, framing and existing photographic lighting. Do not smooth the whole face, do not remove natural features or reshape anything. This is restrained cosmetic retouching solely beneath the eyes. Preserve the existing genuinely transparent background/alpha; do not add backdrop, light glow, shadow or scenery.",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaBBox": [
+      91,
+      84,
+      1466,
+      1024
+    ],
+    "opaqueBBox": [
+      499,
+      169,
+      1103,
+      1024
+    ],
+    "outputPng": "natural-retouched.png",
+    "outputWebp": "natural-retouched.webp",
+    "bytesWebp": 75146,
+    "bytesPng": 1085336
+  },
+  {
+    "id": "logo-ub-transparent",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha": true,
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\logo-ub.png"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-9623f718-f332-4666-bdd4-fb56fea40874.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: background-extraction. The referenced image is an existing official Universitas Brawijaya emblem. Remove ONLY the exterior white corner/margin background outside the outer black shield silhouette to actual transparency. Retain every detail of the emblem exactly: outer black shield shape, gold outline, blue black gradient interior, golden statue sculpture, fine tiny details and the exact curved gold text UNIVERSITAS BRAWIJAYA. Do not redraw, simplify, restyle, change colors, distort, recenter or change text. Do not remove white-looking highlights inside the emblem. Keep original square shape and full emblem uncropped. Output genuine alpha transparency outside the black shield only, narrow antialiased edges, no white fringe, no new shadows or background.",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaBBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "opaqueBBox": [
+      2,
+      0,
+      1253,
+      1254
+    ],
+    "outputPng": "logo-ub-transparent.png",
+    "outputWebp": "logo-ub-transparent.webp",
+    "bytesWebp": 245488,
+    "bytesPng": 101660,
+    "sourcePng": "logo-ub-transparent-source.png",
+    "generatedDimensions": [
+      1254,
+      1254
+    ],
+    "outputPngDimensions": [
+      256,
+      256
+    ],
+    "optimization": "Lanczos resize256x256 preserving alpha; full generated PNG retained."
+  },
+  {
+    "id": "speaker-talk-clean",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "alpha": false,
+    "sourceRefs": [
+      "C:\\WEBSITE PERSONAL\\alex-in-motion\\dist\\assets\\speaker-talk.webp"
+    ],
+    "generatedSource": "C:\\Users\\alexa\\.codex\\generated_images\\01a12ea4-9fc5-72d3-91d5-2024e7c06f97\\exec-f56b56ac-9e47-4d85-8e45-e2c2467a63c5.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: precise-object-edit. Edit target is the supplied original photograph of Alex explaining on stage in a blue uniform. Remove only the projected background crowd/people silhouettes and projected rectangular panel behind him, replacing those regions with the same continuous blue stage wall texture and blue stage lighting. Keep the blue stage background photographic and coherent, without any people or human pictures behind him. Preserve Alex EXACTLY: same original face, expression, hair, body size, pose, both hand gestures, microphone, clicker, blue uniform/name badge, shirt/tie/trousers, colors and source lighting. Do not redraw, beautify, reshape, recolor or alter him. Keep same768×1152 framing and original head position. Output full photograph WITH the clean blue stage background. No new people, text, objects or scenery.",
+    "outputPng": "speaker-talk-clean.png",
+    "outputWebp": "speaker-talk-clean.webp",
+    "bytesWebp": 102124,
+    "bytesPng": 1607072
+  },
+  {
+    "tool": "image_gen.imagegen (built-in)",
+    "useCase": "photorealistic-natural",
+    "source": [
+      "head-front.png",
+      "head-left90.png",
+      "head-right90.png"
+    ],
+    "generatedSource": "C:/Users/alexa/.codex/generated_images/01a12e71-cb2a-77a1-80f3-ca441277ac42/exec-5f172123-7eab-484b-871f-39940c89c405.png",
+    "outputPng": "head-back.png",
+    "outputWebp": "head-back.webp",
+    "prompt": "Use the three attached images as identity and hairstyle REFERENCES of Alexander. Generate a single photorealistic isolated BACK VIEW of the SAME young man's head, ears, and upper neck. Camera exactly behind the head at 180 degrees, centered, level, orthographic photographic framing, no face or eyes visible. Match his medium-length thick black side-part hairstyle and realistic hair strands as visible in the profile references, subtly tapered lower hair around the nape, natural tan skin on ears and neck. Match the frontal reference's lighting and scale, clean studio light, preserve realistic texture. Square transparent canvas, head and upper neck only, NO shoulders, NO clothing, NO accessories, NO background, NO drop shadow, NO lettering. Head centered in a 1254 square coordinate layout: top hair about y110, ears about y650, neck ending about y1140. This is one rear texture for a 3D rotating portrait, keep entire hair and ears visible with generous transparent margin. Deliver genuine alpha transparency.",
+    "transparency": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "review": "Inferred back-of-head reference for continuous 3D volume texture. Matches visible hair, ears, and skin; rear anatomy is an approximation, not a scanned surface."
+  },
+  {
+    "tool": "image_gen.imagegen (built-in)",
+    "useCase": "identity-preserve",
+    "source": "portrait.webp",
+    "generatedSource": "C:/Users/alexa/.codex/generated_images/01a12e71-cb2a-77a1-80f3-ca441277ac42/exec-2b64c35b-981d-41c6-9e64-0be5ef7837d2.png",
+    "outputPng": "head-faithful-front.png",
+    "outputWebp": "head-faithful-front.webp",
+    "prompt": "EDIT TARGET: the attached ORIGINAL photographic portrait of Alexander, a young Indonesian university student in a dark navy blazer, on turquoise background. Produce a high-resolution transparent photographic CUTOUT of ONLY his existing head, ears, hair and upper neck from this same photo. Preserve the EXACT photographed identity and apparent young age, exact narrow oval face width, jaw shape, cheek shape, nose, lips, brows, eyes, exact gentle closed-mouth smile and expression, hairline and part, ears, and head posture. Remove background, all blazer, shirt, tie, shoulders and torso. The neck must end naturally above the shirt at a clean base. Do not invent extra neck length. This is a faithful extraction and image upscaling, NOT a new portrait, NOT beautification, NOT another angle. Do not widen the face, do not add skin pores, wrinkles, beard, moustache or under-eye texture that is not present in the original. Keep the original warm natural skin colors and soft flattering photographic lighting, and original smooth youthful skin texture. Increase sharpness gently without making skin hard, aged or plastic. Center the original existing forward-looking head and upper neck, no roll or perspective change, with full hair and both ears visible. Square1254composition: hair top~100, eyes~480, chin~950, short visible upper neck ending~1110. Genuine transparent alpha background, no shadow, halo, clothing, text or other objects.",
+    "transparency": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "review": "Head-only extraction/upscale using the original frontal university portrait as sole identity anchor; naturally colored, younger/narrower appearance than earlier generated turntable views."
+  },
+  {
+    "file": "natural-retouched.webp",
+    "date": "2026-10-13",
+    "tool": ".qa/round13/retouch_eyes.py (OpenCV + MediaPipe landmarks)",
+    "edit": "Under-eye bags lifted toward cheek tone via frequency separation; skin texture kept; alpha preserved.",
+    "previous": ".qa/round13/natural-retouched-before.png"
+  },
+  {
+    "file": "medals.webp",
+    "date": "2026-10-13",
+    "tool": ".qa/round13/clean_medals_rim.py (OpenCV)",
+    "edit": "Grey halo on the silhouette removed: outer 3 px recoloured from the interior and faded; background set to the section colour #0d0e0b. Thumbnail regenerated.",
+    "previous": ".qa/round13/medals-before.webp"
+  }
+]

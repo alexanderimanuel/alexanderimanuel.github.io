@@ -1,0 +1,61 @@
+/* Depth, responsive light, and motion for the personal archive. */
+.motion-enhanced.motion-ready .reveal{opacity:1;transform:none;transition:none}
+.reading-progress{position:fixed;inset:0 0 auto;height:3px;z-index:50;background:var(--red);transform:scaleX(0);transform-origin:0 50%;pointer-events:none;box-shadow:0 0 14px #ee4b3b40}
+.motion-tilt{position:relative;transform:perspective(1000px) rotateX(var(--motion-tilt-x,0deg)) rotateY(var(--motion-tilt-y,0deg));transform-style:preserve-3d;transition:box-shadow .4s,border-color .4s;isolation:isolate}
+.motion-enhanced.motion-ready .reveal.motion-tilt{transform:perspective(1000px) rotateX(var(--motion-tilt-x,0deg)) rotateY(var(--motion-tilt-y,0deg))}
+.motion-tilt:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;background:radial-gradient(ellipse at var(--motion-light-x,50%) var(--motion-light-y,50%),#fff2,transparent 68%);opacity:calc(var(--motion-glow,0)*.5);border-radius:inherit;mix-blend-mode:screen}
+.light-section .motion-tilt:after{background:radial-gradient(ellipse at var(--motion-light-x,50%) var(--motion-light-y,50%),#fff8,transparent 68%);mix-blend-mode:normal}
+.motion-magnetic{translate:var(--motion-magnetic-x,0px) var(--motion-magnetic-y,0px)}
+.motion-parallax{translate:0 var(--motion-parallax,0px)}
+.affiliation.motion-pointer-active>img{transform:translateZ(25px);filter:drop-shadow(0 8px 10px #0004)}
+.affiliation>img{transition:filter .4s,transform .4s}
+.affiliation.motion-pointer-active p{transform:translateZ(15px)}
+.affiliation p{transition:transform .4s}
+.motion-tilt.moment-photo.motion-pointer-active{box-shadow:0 22px 45px #0004;border-color:#ee4b3b65}
+.moment-photo>span{transition:background .3s;transform:translateZ(24px)}
+.moment-photo:is(:hover,:focus-visible)>span{background:#bc3c30e6}
+.moment-thumbnails button{transition:opacity .3s,border-color .3s,box-shadow .3s,scale .4s}
+.moment-thumbnails button[aria-pressed=true]{box-shadow:0 7px 20px #0004}
+.moment-thumbnails button:is(:hover,:focus-visible){scale:1.045;z-index:2}
+.skill-node>i,.publication-arrow,.text-link>span,.quiet-link,.header-contact>span,.instagram-link>svg,.instagram-link>span,.show-all>span{transition:color .35s,transform .5s cubic-bezier(.16,1,.3,1)}
+.skill-node:is(:hover,:focus-visible)>i,.publication-inner:is(:hover,:focus-visible) .publication-arrow,.text-link:is(:hover,:focus-visible)>span,.header-contact:is(:hover,:focus-visible)>span{transform:translate(3px,-3px)}
+.instagram-link:is(:hover,:focus-visible)>svg{transform:rotate(-8deg) scale(1.12)}
+.instagram-link:is(:hover,:focus-visible)>span{transform:translate(5px,-3px)}
+.show-all:is(:hover,:focus-visible)>span{transform:translateY(5px)}
+.show-all[aria-expanded=true]:is(:hover,:focus-visible)>span{transform:translateY(-5px)}
+.achievement-row,.publication-row{position:relative;isolation:isolate;transition:border-color .4s,background .4s}
+.achievement-row:before,.publication-row:before{content:'';position:absolute;inset:0 0 0 -14px;background:linear-gradient(90deg,#ee4b3b0e,transparent 85%);border-left:2px solid var(--red);opacity:0;scale:.97 1;transform-origin:left;transition:opacity .35s,scale .4s;z-index:-1;pointer-events:none}
+.achievement-row:hover:before,.publication-row:has(:focus-visible):before,.publication-row:hover:before{opacity:1;scale:1}
+.achievement-row h3,.publication-row h3{transition:color .3s,translate .45s cubic-bezier(.16,1,.3,1)}
+.achievement-row:hover h3,.publication-row:hover h3,.publication-row:has(:focus-visible) h3{translate:5px 0}
+.achievement-row:hover h3{color:#fff3e3}
+.skill-terms>span{position:relative;padding:5px 8px;border:1px solid #92a67524;border-radius:3px;background:#91a87406;transition:color .3s,border-color .3s,translate .35s,background .35s}
+.skill-terms>span:hover{translate:0 -4px;color:#fff0dd;border-color:#ee4b3b75;background:#ee4b3b10}
+.skill-evidence li{transition:translate .4s,color .4s}
+.skill-evidence li:hover{translate:5px 0;color:#c8d6b7}
+.skill-connections{overflow:visible}.skill-connections path{stroke-dasharray:1100;stroke-dashoffset:0}
+.motion-section-active .skill-connections path{animation:atlas-draw 2s cubic-bezier(.16,1,.3,1) both}
+.motion-section-active .skill-connections circle[stroke-dasharray]{animation:atlas-orbit 50s linear infinite;transform-origin:300px 255px}
+.motion-section-active .skill-cube-stage{animation:atlas-float 6s ease-in-out infinite}
+.motion-section-active .skill-floor{animation:atlas-shadow 6s ease-in-out infinite}
+.profile-facts>div,.engagement-stats>div{transition:color .3s}
+.profile-facts>div:hover strong,.engagement-stats>div:hover strong{color:var(--red)}
+.profile-facts strong,.engagement-stats strong{transition:color .4s}
+.contact-arrow{transition:rotate .8s cubic-bezier(.16,1,.3,1),translate .8s cubic-bezier(.16,1,.3,1);transform-origin:center}
+.contact-content:has(.instagram-link:hover) .contact-arrow,.contact-content:has(.instagram-link:focus-visible) .contact-arrow{rotate:12deg;translate:10px -10px}
+.contact .reading-progress{background:var(--ink)}
+.detail-dialog[open],.media-dialog[open]{animation:archive-dialog .5s cubic-bezier(.16,1,.3,1)}
+.detail-dialog[open]::backdrop,.media-dialog[open]::backdrop{animation:archive-backdrop .4s ease}
+.mobile-menu:not([hidden]){animation:archive-menu .4s cubic-bezier(.16,1,.3,1)}
+.mobile-menu:not([hidden]) a{animation:archive-menu .5s cubic-bezier(.16,1,.3,1) backwards}
+.mobile-menu a:nth-child(2){animation-delay:.04s}.mobile-menu a:nth-child(3){animation-delay:.08s}.mobile-menu a:nth-child(4){animation-delay:.12s}.mobile-menu a:nth-child(5){animation-delay:.16s}
+.motion-document-hidden .skill-cube-stage,.motion-document-hidden .skill-floor,.motion-document-hidden .skill-connections circle{animation-play-state:paused}
+@keyframes atlas-draw{from{stroke-dashoffset:1100}to{stroke-dashoffset:0}}
+@keyframes atlas-orbit{to{transform:rotate(360deg)}}
+@keyframes atlas-float{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@keyframes atlas-shadow{0%,100%{scale:1;opacity:1}50%{scale:.93;opacity:.75}}
+@keyframes archive-dialog{from{opacity:0;translate:0 32px;scale:.96}to{opacity:1;translate:0 0;scale:1}}
+@keyframes archive-backdrop{from{opacity:0}to{opacity:1}}
+@keyframes archive-menu{from{opacity:0;translate:0 -10px}to{opacity:1;translate:0 0}}
+@media(max-width:760px){.reading-progress{height:2px}.motion-section-active .skill-cube-stage{animation-duration:7s}.achievement-row:before,.publication-row:before{left:-8px}.contact-content:has(.instagram-link:hover) .contact-arrow{translate:5px -5px}}
+@media(prefers-reduced-motion:reduce){.motion-tilt,.motion-enhanced.motion-ready .reveal.motion-tilt{transform:none}.motion-magnetic,.motion-parallax{translate:0 0!important}.reading-progress{display:none}.motion-enhanced *, .motion-enhanced *:before,.motion-enhanced *:after{animation:none!important;transition:none!important}.contact-arrow{rotate:none!important;translate:0 0!important}.motion-tilt:after{display:none}}

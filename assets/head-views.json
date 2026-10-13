@@ -1,0 +1,252 @@
+{
+  "views": [
+    {
+      "angle": -90,
+      "src": "./assets/head-left90.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1234,
+        1254
+      ],
+      "opaqueBBox": [
+        262,
+        162,
+        1041,
+        1136
+      ],
+      "bytes": 225408
+    },
+    {
+      "angle": -67.5,
+      "src": "./assets/head-left67.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1240,
+        1254
+      ],
+      "opaqueBBox": [
+        221,
+        98,
+        1025,
+        1142
+      ],
+      "bytes": 247758
+    },
+    {
+      "angle": -45,
+      "src": "./assets/head-left45.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        4,
+        1242,
+        1254
+      ],
+      "opaqueBBox": [
+        262,
+        103,
+        1059,
+        1159
+      ],
+      "bytes": 221944
+    },
+    {
+      "angle": -22.5,
+      "src": "./assets/head-left22.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        17,
+        1234,
+        1232
+      ],
+      "opaqueBBox": [
+        253,
+        159,
+        1003,
+        1143
+      ],
+      "bytes": 201016
+    },
+    {
+      "angle": 0,
+      "src": "./assets/head-front.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        20,
+        1240,
+        1214
+      ],
+      "opaqueBBox": [
+        276,
+        120,
+        971,
+        1157
+      ],
+      "bytes": 206322
+    },
+    {
+      "angle": 22.5,
+      "src": "./assets/head-right22.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1234,
+        1228
+      ],
+      "opaqueBBox": [
+        285,
+        145,
+        998,
+        1148
+      ],
+      "bytes": 206550
+    },
+    {
+      "angle": 45,
+      "src": "./assets/head-right45.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        17,
+        1228,
+        1228
+      ],
+      "opaqueBBox": [
+        244,
+        111,
+        1043,
+        1154
+      ],
+      "bytes": 239790
+    },
+    {
+      "angle": 67.5,
+      "src": "./assets/head-right67.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        17,
+        1232,
+        1230
+      ],
+      "opaqueBBox": [
+        202,
+        142,
+        1016,
+        1166
+      ],
+      "bytes": 233418
+    },
+    {
+      "angle": 90,
+      "src": "./assets/head-right90.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1240,
+        1230
+      ],
+      "opaqueBBox": [
+        198,
+        139,
+        1026,
+        1145
+      ],
+      "bytes": 266808
+    }
+  ],
+  "crop": {
+    "left": 0,
+    "right": 1,
+    "bottom": 0,
+    "top": 1
+  },
+  "portraitHeight": 8.5,
+  "fadeNeck": true,
+  "yawConvention": "Negative yaw: nose points LEFT in image. Positive yaw: nose points RIGHT.",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "notes": "Identity-preserving generated photographic turntable views from Alex front and actual left/right three-quarter references; unseen extreme views approximate real anatomy."
+}

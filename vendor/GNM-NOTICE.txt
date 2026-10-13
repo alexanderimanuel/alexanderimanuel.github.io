@@ -1,0 +1,8 @@
+This site includes a fitted head geometry derived from Google GNM Head.
+Source: https://github.com/google/GNM
+Source revision: a67464ab4b76470191aa15acf2a56c8d1582836f
+Licensed under Apache License 2.0. See GNM-LICENSE.txt.
+
+Modifications: identity/expression fitting to Alex's supplied photographs,
+runtime mesh export, and custom photograph-based texture mapping and hair.
+The derived portrait is an approximate reconstruction, not a biometric scan.

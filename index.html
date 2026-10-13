@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a09">
+  <meta name="description" content="Alexander Imanuel Widjanarko / AI builder, Founder of KIOS AI, The Most Outstanding Student of Universitas Brawijaya 2026, speaker, and author. Get to know Alex's work and journey.">
+  <title>Alexander Imanuel / Ideas into action.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/head-front.webp" as="image">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./legibility.css">
+  <link rel="stylesheet" href="./motion.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#story">Skip to the story</a>
+  <header class="header" id="header">
+    <a href="#home" class="wordmark" aria-label="Alex, back to top">AIW<span class="wordmark-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#story">The person</a><a href="#skills">Skills</a><a href="#recognition">Wins</a><a href="#writing">Writing</a></nav>
+    <a class="header-contact" href="https://www.instagram.com/alexander_iw123/" target="_blank" rel="noopener noreferrer">LET’S CONNECT <span>↗</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#story">The person</a><a href="#skills">Skills</a><a href="#recognition">Wins</a><a href="#writing">Writing</a><a href="https://www.instagram.com/alexander_iw123/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="scene-wrap" id="scene-wrap">
+        <img class="scene-fallback" src="./assets/head-front.webp" alt="Alex's portrait, the chosen look" width="1254" height="1254">
+        <canvas id="hero-canvas" aria-label="Alex's portrait spinning 360 degrees. Drag sideways to turn it yourself."></canvas>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow"><span class="red-rule"></span>AI BUILDER / ENTREPRENEUR / SPEAKER</p>
+        <h1 id="hero-title"><span>Alexander</span><em>Imanuel Widjanarko<span class="red-period">.</span></em></h1>
+        <p class="hero-description">I connect tech, business, and education through products, research, and good conversations.</p>
+        <div class="hero-actions"><a class="text-cta" href="#story">Meet me <span>↓</span></a><a class="quiet-link" href="#skills">See the skills ↗</a></div>
+      </div>
+      <div class="scene-interface"><div class="rotation-heading"><span class="scene-live-dot"></span><p id="scene-hint">ALEX / PERSONAL PORTRAIT <span>360° / AUTO-SPIN</span></p><button id="motion-toggle" aria-label="Pause the portrait" aria-pressed="false">Ⅱ</button></div><details class="portrait-controls"><summary>Spin controls <span aria-hidden="true">↗</span></summary><div class="rotation-control"><label class="sr-only" for="portrait-angle">Rotation angle of Alex's portrait</label><input id="portrait-angle" type="range" min="0" max="360" step="1" value="0" aria-valuetext="0 degrees, front view"><output id="portrait-angle-value" for="portrait-angle" aria-live="off">0°</output></div><div class="rotation-views" role="group" aria-label="Portrait views"><button data-portrait-angle="0" class="active" aria-pressed="true">Front</button><button data-portrait-angle="90">Side</button><button data-portrait-angle="180">Back</button></div></details></div>
+      <div class="hero-bottom"><span>MALANG, INDONESIA <span id="local-time"></span></span><a href="#story">SCROLL TO EXPLORE <span>↓</span></a><span>ALEXANDER IMANUEL / 2026</span></div>
+    </section>
+    <div class="affiliation-strip"><div class="affiliation"><img src="./assets/logo-ub-transparent.png" alt="Logo Universitas Brawijaya" width="300" height="300"><p><strong>UNIVERSITAS BRAWIJAYA</strong><span>The Most Outstanding Student 2026</span></p></div><div class="affiliation"><img class="coc-logo" src="./assets/logo-coc.png" alt="Logo Clash of Champions Season 3 Ruangguru" width="952" height="400"><p><strong>RUANGGURU</strong><span>Clash of Champions · Season 3 contestant</span></p></div><div class="affiliation kios-affiliation"><span class="kios-logo-frame"><img src="./assets/logo-kios-ai.webp" alt="Logo KIOS AI" width="800" height="800" loading="lazy"></span><p><strong>KIOS AI</strong><span>Founder & CEO<br>AI, business, and the next chapter.</span></p></div></div>
+    <section class="section about light-section" id="story" aria-labelledby="about-title">
+      <div class="section-top reveal"><p class="eyebrow">01 / THE PERSON</p><span class="section-small">Behind every idea, there's a journey.</span></div>
+      <div class="about-layout">
+        <div class="about-copy reveal"><h2 id="about-title">ONE NAME.<br>MANY<br><em>ways to build.</em></h2><div class="bio" id="bio"></div><div class="about-signature"><span>Alexander.</span><p>BUILDER / THINKER / SPEAKER</p></div></div>
+        <figure class="about-visual cutout-portrait reveal"><div class="about-letter" aria-hidden="true">A</div><span class="photo-index">ALEX, OFF THE STAGE / 01</span><img src="./assets/natural-retouched.webp" alt="Alex in a black suit" width="1536" height="1024" loading="lazy"><figcaption><span>ALEX / PERSONAL ARCHIVE</span><span>↗</span></figcaption></figure>
+      </div>
+      <div class="profile-facts reveal"><div><strong>3.99<span>/4</span></strong><p>GPA</p></div><div><strong>01<span>st</span></strong><p>The Most Outstanding Student of UB 2026</p></div><div><strong>19</strong><p>IP registrations · works & learning media</p></div></div>
+    </section>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-top reveal"><p class="eyebrow">02 / THE SKILL ATLAS</p><span class="section-small">Five sides. All connected.</span></div>
+      <div class="section-heading reveal"><h2 id="skills-title">HOW I<br><em>build.</em></h2><p>Tech, product, business, stocks, and communication.<br>Pick a side to see what's inside.</p></div>
+      <div class="skill-layout">
+        <div class="skill-atlas reveal">
+          <svg class="skill-connections" viewBox="0 0 600 520" fill="none" aria-hidden="true"><path d="M300 20 505 140 460 435 125 435 85 140 300 20Z"/><path d="M300 20 300 255M505 140 300 255 460 435M125 435 300 255 85 140"/><circle cx="300" cy="255" r="195" stroke-dasharray="2 8"/><circle cx="300" cy="255" r="4"/></svg>
+          <div class="skill-cube-stage" aria-hidden="true"><div class="skill-floor"></div><div class="skill-cube" id="skill-cube" data-active="ai"><div class="skill-face face-ai"><small>01 / INTELLIGENCE</small><strong>AI</strong><span>DATA → UNDERSTANDING</span></div><div class="skill-face face-product"><small>02 / EXPERIENCE</small><strong>PRODUCT</strong><span>USER → EXPERIENCE</span></div><div class="skill-face face-business"><small>03 / STRATEGY</small><strong>BUSINESS</strong><span>IDEA → VALUE</span></div><div class="skill-face face-communication"><small>04 / COMMUNICATION</small><strong>VOICE</strong><span>KNOWLEDGE → PEOPLE</span></div><div class="skill-face face-top face-investment"><small>05 / INVESTMENT</small><strong>STOCKS</strong><span>RESEARCH → DECISION</span></div><div class="skill-face face-bottom"></div></div></div>
+          <div class="skill-nodes" role="tablist" aria-label="Skill groups"><button class="skill-node node-ai" id="skill-ai" role="tab" aria-controls="skill-panel" aria-selected="true" tabindex="0" data-skill="ai"><span>01</span>AI & ML<i>↗</i></button><button class="skill-node node-product" id="skill-product" role="tab" aria-controls="skill-panel" aria-selected="false" tabindex="-1" data-skill="product"><span>02</span>PRODUCT<i>↗</i></button><button class="skill-node node-business" id="skill-business" role="tab" aria-controls="skill-panel" aria-selected="false" tabindex="-1" data-skill="business"><span>03</span>BUSINESS<i>↗</i></button><button class="skill-node node-communication" id="skill-communication" role="tab" aria-controls="skill-panel" aria-selected="false" tabindex="-1" data-skill="communication"><span>04</span>VOICE<i>↗</i></button><button class="skill-node node-investment" id="skill-investment" role="tab" aria-controls="skill-panel" aria-selected="false" tabindex="-1" data-skill="investment"><span>05</span>STOCKS<i>↗</i></button></div>
+          <p class="skill-atlas-caption"><span>THE FIVE SIDES OF ALEX</span><span>PICK A SIDE ↗</span></p>
+        </div>
+        <div class="skill-panel reveal" id="skill-panel" role="tabpanel" aria-labelledby="skill-ai" tabindex="0"></div>
+      </div>
+    </section>
+    <section class="section recognition" id="recognition" aria-labelledby="recognition-title">
+      <div class="section-top reveal"><p class="eyebrow">03 / THE TRACK RECORD</p><span class="section-small">2023 / 2026</span></div>
+      <div class="recognition-layout">
+        <div class="recognition-intro reveal"><h2 id="recognition-title">BUILT<br>THROUGH<br><em>experience.</em></h2><div class="archive-number">50<span>WINS<br>& APPEARANCES</span></div><p>Business, research, and tech competitions, plus every chance to test myself. All logged here.</p><figure class="award-photo"><img src="./assets/medals.webp" alt="Alex holding his 4C National Competition 2024 trophy" loading="lazy" width="977" height="1280"><figcaption>THE COMPETITION YEARS <span>↗</span></figcaption></figure></div>
+        <div class="achievement-list reveal"><div class="archive-tools"><label class="search-label" for="achievement-search">SEARCH THE ARCHIVE <span>⌕</span></label><input id="achievement-search" type="search" placeholder="Competition name or year…" autocomplete="off"><div class="filter-tabs" role="group" aria-label="Filter achievements"><button data-filter="semua" class="active" aria-pressed="true">All</button><button data-filter="akademik" aria-pressed="false">Academic</button><button data-filter="bisnis" aria-pressed="false">Business</button><button data-filter="riset" aria-pressed="false">Research</button></div></div><p class="archive-status" id="achievement-status" role="status"></p><div id="achievements"></div><button class="show-all" id="show-achievements" aria-expanded="false" aria-controls="achievements">Show all 50 <span>↓</span></button></div>
+      </div>
+    </section>
+    <section class="section speaking" id="speaking" aria-labelledby="speaking-title">
+      <div class="speaking-portrait"><img src="./assets/speaker-talk-cutout.webp" alt="Alex presenting in a blue uniform" loading="lazy" width="768" height="1152"><span>ON STAGE / ALEXANDER IMANUEL</span></div>
+      <div class="speaking-content"><p class="eyebrow reveal">04 / THE VOICE</p><h2 class="reveal" id="speaking-title">IDEAS<br>WORTH<br><em>sharing.</em></h2><p class="speaking-description reveal">From AI and product development to entrepreneurship. I share as a speaker, and weigh in on ideas as a judge.</p><div class="engagement-stats reveal"><div><strong id="speaker-count">20+</strong><span>TALKS AS SPEAKER</span></div><div><strong id="judge-count">10+</strong><span>TIMES AS JUDGE</span></div></div><a class="text-cta reveal" href="https://www.instagram.com/alexander_iw123/" target="_blank" rel="noopener noreferrer">Start a conversation on Instagram <span>↗</span></a></div>
+    </section>
+    <section class="section writing light-section" id="writing" aria-labelledby="writing-title">
+      <div class="section-top reveal"><p class="eyebrow">05 / THE WRITTEN WORK</p><a class="text-link" href="https://scholar.google.com/citations?user=t97LgJ4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span>↗</span></a></div>
+      <div class="section-heading reveal"><h2 id="writing-title">THOUGHTS,<br><em>in print.</em></h2><div class="publication-total"><strong>12</strong><p>PUBLICATIONS<br>Papers, proceedings, chapters & books.</p></div></div>
+      <div class="publication-filters filter-tabs reveal" role="group" aria-label="Filter publications"><button data-publication-filter="semua" class="active" aria-pressed="true">All</button><button data-publication-filter="paper" aria-pressed="false">Papers & proceedings</button><button data-publication-filter="buku" aria-pressed="false">Books & chapters</button></div><div class="publications reveal" id="publications"></div><button class="show-all reveal" id="show-publications" aria-expanded="false" aria-controls="publications">Show all 12 <span>↓</span></button><p class="publication-note">Paper links go to my Google Scholar profile, where you can dig into each one.</p>
+    </section>
+    <section class="section moments" id="moments" aria-labelledby="moments-title">
+      <div class="section-top reveal"><p class="eyebrow">06 / PERSONAL CONTACT SHEET</p><span class="section-small">Not just about the end result.</span></div><div class="section-heading reveal"><h2 id="moments-title">LIFE,<br><em>unfiltered.</em></h2><p>On stage. On campus. Behind the scenes.<br>Slices of my everyday.</p></div><div class="gallery" id="gallery"></div><div class="gallery-bottom"><span>05 FRAMES / THE PERSONAL ARCHIVE</span><span>Open photo <span>↗</span></span></div>
+    </section>
+    <section class="section contact" id="contact" aria-labelledby="contact-title"><div class="section-top reveal"><p class="eyebrow">07 / KEEP THE CONVERSATION GOING</p><span class="section-small">Malang, Indonesia.</span></div><div class="contact-content reveal"><p class="contact-pretitle">An idea, an invite, or just a hello.</p><h2 id="contact-title">LET’S<br><em>connect.</em><span class="contact-arrow" aria-hidden="true">↗</span></h2><a class="instagram-link" href="https://www.instagram.com/alexander_iw123/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@alexander_iw123 <span>INSTAGRAM ↗</span></a></div><footer><a href="#home" class="wordmark" aria-label="Back to top">AIW<span class="wordmark-dot">.</span></a><span>© 2026 ALEXANDER IMANUEL WIDJANARKO</span><a href="#home">BACK TO TOP ↑</a></footer></section>
+  </main>
+  <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close details">✕</button><div id="dialog-content"></div></dialog>
+  <dialog class="media-dialog" id="media-dialog" aria-label="Alex's photo viewer"><button class="dialog-close" aria-label="Close photo">✕</button><div id="media-content"></div></dialog>
+  <noscript><div class="no-script">Turn on JavaScript to see the full archive and the 3D installation. Say hi to Alex at <a href="https://www.instagram.com/alexander_iw123/">@alexander_iw123</a>.</div></noscript>
+</body>
+</html>

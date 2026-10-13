@@ -1,0 +1,533 @@
+{
+  "format": "portrait-sequence-flow-v1",
+  "pipelineVersion": "registered-dis-contour-v3-with-reviewed-numeric-pair-overrides-v4",
+  "frameSize": [
+    1254,
+    1254
+  ],
+  "flowSize": [
+    256,
+    256
+  ],
+  "flowRangePixels": 128,
+  "stepDegrees": 10,
+  "frameCount": 36,
+  "cyclic": true,
+  "flowEncoding": "RGBA8: RG=round(sourcePixelDisplacement/range*127)+128, B confidence, A255",
+  "flowDirection": "first.flowForward defined at first toward second; second.flowBackward defined at second toward first",
+  "flowTextureColorSpace": "NoColorSpace",
+  "flowBitmapImageOrientation": "flipY",
+  "flowTextureFlipY": false,
+  "registrationTransform": "registered ThreeUV * transform.xy + transform.zw maps to unchanged original photograph",
+  "frames": [
+    {
+      "angle": 0,
+      "src": "./assets/portrait-sequence/000.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowForward": "./assets/portrait-sequence/flow-000-010-forward.png",
+      "flowBackward": "./assets/portrait-sequence/flow-350-000-backward.png",
+      "flowBackwardRangePixels": 128
+    },
+    {
+      "angle": 10,
+      "src": "./assets/portrait-sequence/010.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-000-010-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-010-020-forward.png"
+    },
+    {
+      "angle": 20,
+      "src": "./assets/portrait-sequence/020.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-010-020-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-020-030-forward.png"
+    },
+    {
+      "angle": 30,
+      "src": "./assets/portrait-sequence/030.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-020-030-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-030-040-forward.png"
+    },
+    {
+      "angle": 40,
+      "src": "./assets/portrait-sequence/040.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-030-040-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-040-050-forward.png"
+    },
+    {
+      "angle": 50,
+      "src": "./assets/portrait-sequence/050.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-040-050-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-050-060-forward.png"
+    },
+    {
+      "angle": 60,
+      "src": "./assets/portrait-sequence/060.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-050-060-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-060-070-forward.png"
+    },
+    {
+      "angle": 70,
+      "src": "./assets/portrait-sequence/070.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0402298850574714,
+        1.0402298850574714,
+        -0.036225418008318334,
+        -0.028531801648516215
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-060-070-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-070-080-forward.png"
+    },
+    {
+      "angle": 80,
+      "src": "./assets/portrait-sequence/080.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0258620689655173,
+        1.0258620689655173,
+        -0.035163503209733764,
+        -0.02051905111633314
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-070-080-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-080-090-forward.png"
+    },
+    {
+      "angle": 90,
+      "src": "./assets/portrait-sequence/090.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0229885057471264,
+        1.0229885057471264,
+        -0.027684637749948903,
+        -0.024153911462258076
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-080-090-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-090-100-forward.png"
+    },
+    {
+      "angle": 100,
+      "src": "./assets/portrait-sequence/100.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-090-100-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-100-110-forward.png"
+    },
+    {
+      "angle": 110,
+      "src": "./assets/portrait-sequence/110.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-100-110-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-110-120-forward.png"
+    },
+    {
+      "angle": 120,
+      "src": "./assets/portrait-sequence/120.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.024904214559387,
+        1.024904214559387,
+        -0.008608643370862385,
+        -0.01920359895206858
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-110-120-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-120-130-forward.png"
+    },
+    {
+      "angle": 130,
+      "src": "./assets/portrait-sequence/130.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-120-130-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-130-140-forward.png"
+    },
+    {
+      "angle": 140,
+      "src": "./assets/portrait-sequence/140.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0335249042145593,
+        1.0335249042145593,
+        -0.013509409707276352,
+        -0.020189167219410643
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-130-140-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-140-150-forward.png"
+    },
+    {
+      "angle": 150,
+      "src": "./assets/portrait-sequence/150.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-140-150-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-150-160-forward.png"
+    },
+    {
+      "angle": 160,
+      "src": "./assets/portrait-sequence/160.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-150-160-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-160-170-forward.png"
+    },
+    {
+      "angle": 170,
+      "src": "./assets/portrait-sequence/170.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0325670498084292,
+        1.0325670498084292,
+        -0.00024156721054670316,
+        -0.02210072334662065
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-160-170-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-170-180-forward.png"
+    },
+    {
+      "angle": 180,
+      "src": "./assets/portrait-sequence/180.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0416666666666667,
+        1.0416666666666667,
+        -0.025357832520453556,
+        -0.026091571940332688
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-170-180-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-180-190-forward.png"
+    },
+    {
+      "angle": 190,
+      "src": "./assets/portrait-sequence/190.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0416666666666667,
+        1.0416666666666667,
+        -0.014704236382860487,
+        -0.026452357980656642
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-180-190-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-190-200-forward.png"
+    },
+    {
+      "angle": 200,
+      "src": "./assets/portrait-sequence/200.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0416666666666667,
+        1.0416666666666667,
+        0.011371578572885054,
+        -0.02572132989230356
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-190-200-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-200-210-forward.png"
+    },
+    {
+      "angle": 210,
+      "src": "./assets/portrait-sequence/210.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0373563218390804,
+        1.0373563218390804,
+        0.016790121603116447,
+        -0.022289203016471946
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-200-210-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-210-220-forward.png"
+    },
+    {
+      "angle": 220,
+      "src": "./assets/portrait-sequence/220.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0114942528735633,
+        1.0114942528735633,
+        0.04832736935937469,
+        -0.011811636428337319
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-210-220-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-220-230-forward.png"
+    },
+    {
+      "angle": 230,
+      "src": "./assets/portrait-sequence/230.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0057471264367817,
+        1.0057471264367817,
+        0.05709622505492938,
+        0.0014328928431473834
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-220-230-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-230-240-forward.png"
+    },
+    {
+      "angle": 240,
+      "src": "./assets/portrait-sequence/240.webp",
+      "flowRangePixels": 256,
+      "transform": [
+        0.9942528735632183,
+        0.9942528735632183,
+        0.04665035313693112,
+        -0.005065595420511864
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-230-240-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-240-250-forward.png"
+    },
+    {
+      "angle": 250,
+      "src": "./assets/portrait-sequence/250.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9615384615384615,
+        0.9615384615384615,
+        0.0591870582781837,
+        0.026876258403512713
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-240-250-backward.png",
+      "flowBackwardRangePixels": 256,
+      "flowForward": "./assets/portrait-sequence/flow-250-260-forward.png"
+    },
+    {
+      "angle": 260,
+      "src": "./assets/portrait-sequence/260.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9846743295019158,
+        0.9846743295019158,
+        0.052637984589706255,
+        0.011576788871151697
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-250-260-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-260-270-forward.png"
+    },
+    {
+      "angle": 270,
+      "src": "./assets/portrait-sequence/270.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9693486590038314,
+        0.9693486590038314,
+        0.06610700019743967,
+        0.009315684687698653
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-260-270-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-270-280-forward.png"
+    },
+    {
+      "angle": 280,
+      "src": "./assets/portrait-sequence/280.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9818007662835249,
+        0.9818007662835249,
+        0.06946445065953767,
+        0.00792882586227657
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-270-280-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-280-290-forward.png"
+    },
+    {
+      "angle": 290,
+      "src": "./assets/portrait-sequence/290.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9971264367816092,
+        0.9971264367816092,
+        0.06146588583300863,
+        -0.00016638979182860688
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-280-290-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-290-300-forward.png"
+    },
+    {
+      "angle": 300,
+      "src": "./assets/portrait-sequence/300.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9827586206896551,
+        0.9827586206896551,
+        0.05660174034355343,
+        -0.00023007111106852773
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-290-300-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-300-310-forward.png"
+    },
+    {
+      "angle": 310,
+      "src": "./assets/portrait-sequence/310.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        0.9961685823754789,
+        0.9961685823754789,
+        0.039833002651580775,
+        0.00024327118614612562
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-300-310-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-310-320-forward.png"
+    },
+    {
+      "angle": 320,
+      "src": "./assets/portrait-sequence/320.webp",
+      "flowRangePixels": 256,
+      "transform": [
+        1.0114942528735633,
+        1.0114942528735633,
+        0.044698333441626964,
+        -0.0036660349666493425
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-310-320-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-320-330-forward.png"
+    },
+    {
+      "angle": 330,
+      "src": "./assets/portrait-sequence/330.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-320-330-backward.png",
+      "flowBackwardRangePixels": 256,
+      "flowForward": "./assets/portrait-sequence/flow-330-340-forward.png"
+    },
+    {
+      "angle": 340,
+      "src": "./assets/portrait-sequence/340.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-330-340-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-340-350-forward.png"
+    },
+    {
+      "angle": 350,
+      "src": "./assets/portrait-sequence/350.webp",
+      "flowRangePixels": 128,
+      "transform": [
+        1.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "flowBackward": "./assets/portrait-sequence/flow-340-350-backward.png",
+      "flowBackwardRangePixels": 128,
+      "flowForward": "./assets/portrait-sequence/flow-350-000-forward.png"
+    }
+  ],
+  "reviewedPairOverrides": [
+    "240-250",
+    "320-330",
+    "350-000"
+  ]
+}
