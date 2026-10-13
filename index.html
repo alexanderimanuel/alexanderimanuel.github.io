@@ -9,7 +9,15 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./assets/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./assets/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./assets/head-front.webp" as="image">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="modulepreload" href="./scene.js">
+  <link rel="modulepreload" href="./vendor/three.module.js">
+  <link rel="modulepreload" href="./vendor/three.core.js">
+  <link rel="preload" href="./assets/head-static.json" as="fetch" crossorigin>
+  <link rel="preload" href="./assets/head-static.bin" as="fetch" crossorigin>
+  <link rel="preload" href="./assets/head-static-atlas.webp" as="fetch" crossorigin>
+  <link rel="preload" href="./assets/view-studio-front.webp" as="fetch" crossorigin>
+  <link rel="preload" href="./assets/view-weights-a.png" as="fetch" crossorigin>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./legibility.css">
   <link rel="stylesheet" href="./motion.css">

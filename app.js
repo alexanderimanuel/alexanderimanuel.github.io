@@ -111,8 +111,8 @@ $$('[data-portrait-angle]').forEach(button=>button.addEventListener('click',()=>
 updateAngle(0);
 function updateMotion(){motion.setAttribute('aria-pressed',String(paused));motion.setAttribute('aria-label',paused?'Resume the portrait':'Pause the portrait');motion.textContent=paused?'▷':'Ⅱ';}
 updateMotion();motion.addEventListener('click',()=>{paused=!paused;scene?.setPaused(paused);updateMotion();});
-canvas.addEventListener('scene-unavailable',()=>wrap.classList.remove('ready'));canvas.addEventListener('scene-restored',()=>wrap.classList.add('ready'));
-async function startScene(){try{const{initScene}=await import('./scene.js');scene=await initScene({canvas,onReady:()=>wrap.classList.add('ready'),onAngleChange:value=>{if(scene)updateAngle(value);}});if(scene){scene.setPaused(paused);scene.setAngle(portraitAngle);}else throw new Error('WebGL unavailable');}catch{wrap.classList.remove('ready');$('#scene-hint').textContent='ALEX / PERSONAL PORTRAIT';motion.hidden=true;$('.portrait-controls').hidden=true;}}
+canvas.addEventListener('scene-unavailable',()=>{wrap.classList.remove('ready');wrap.classList.add('failed');});canvas.addEventListener('scene-restored',()=>{wrap.classList.remove('failed');wrap.classList.add('ready');});
+async function startScene(){try{const{initScene}=await import('./scene.js');scene=await initScene({canvas,onReady:()=>wrap.classList.add('ready'),onAngleChange:value=>{if(scene)updateAngle(value);}});if(scene){scene.setPaused(paused);scene.setAngle(portraitAngle);}else throw new Error('WebGL unavailable');}catch{wrap.classList.remove('ready');wrap.classList.add('failed');$('#scene-hint').textContent='ALEX / PERSONAL PORTRAIT';motion.hidden=true;$('.portrait-controls').hidden=true;}}
 startScene();
 let disposeMotion;
 import('./motion.js').then(({initMotion})=>{disposeMotion=initMotion();}).catch(()=>{});
