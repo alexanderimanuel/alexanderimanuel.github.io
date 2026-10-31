@@ -1,0 +1,52 @@
+/* ---------- intro ---------- */
+.intro{display:none}
+.js .intro{display:flex;position:fixed;inset:0;z-index:200;background:#080908;color:var(--white);flex-direction:column;justify-content:flex-end;padding:0 var(--gutter) 9vh;clip-path:inset(0 0 0 0);transition:clip-path 1s cubic-bezier(.77,0,.18,1);cursor:progress;
+  animation:intro-failsafe 0s 6s forwards}
+.intro.intro-leave{clip-path:inset(0 0 100% 0)}
+.intro-label{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;font:500 11px/1.6 var(--sans);letter-spacing:.16em;color:#8d8d84;text-transform:uppercase}
+.intro-label strong{color:var(--white);font-weight:600}
+.intro-count{font:800 clamp(96px,22vw,320px)/.8 var(--display);letter-spacing:-.07em;font-variant-numeric:tabular-nums;margin:18px 0 26px -.04em}
+.intro-count+span{color:var(--red)}
+.intro-track{height:2px;background:#ffffff1a;overflow:hidden}
+.intro-bar{height:100%;background:var(--red);transform:scaleX(0);transform-origin:0 50%}
+@keyframes intro-failsafe{to{clip-path:inset(0 0 100% 0);visibility:hidden}}
+html:not(.hero-live).js .hero-copy,html:not(.hero-live).js .scene-interface{opacity:0}
+
+/* ---------- hero title letters ---------- */
+.hero-letter{display:inline-block;will-change:transform,opacity}
+
+/* ---------- counters ---------- */
+.is-counting{font-variant-numeric:tabular-nums}
+.counted{animation:count-pop .5s cubic-bezier(.16,1,.3,1)}
+@keyframes count-pop{40%{color:var(--red)}}
+
+/* ---------- marquee ---------- */
+.marquee{overflow:hidden;background:var(--red);color:#170805;border-block:1px solid #00000022;padding:18px 0;user-select:none}
+.marquee-track{display:flex;width:max-content;align-items:center;gap:34px;padding-right:34px;will-change:transform}
+.marquee-track span{font:800 clamp(28px,4.4vw,64px)/1 var(--display);letter-spacing:-.045em;white-space:nowrap;text-transform:uppercase}
+.marquee-track span em{font:italic 400 1.05em/1 var(--serif);letter-spacing:-.02em;text-transform:none}
+.marquee-track i{font-style:normal;font-size:clamp(18px,2.4vw,34px);color:#fff3ea}
+
+/* ---------- lists: hover spotlight ---------- */
+.achievement-row{position:relative;transition:padding .45s cubic-bezier(.16,1,.3,1)}
+.achievement-row:before{content:'';position:absolute;inset:0 -14px;background:linear-gradient(90deg,#ee4b3b14,transparent 70%);opacity:0;transition:opacity .35s;pointer-events:none}
+.achievement-row:after{content:'';position:absolute;left:-14px;top:22%;bottom:22%;width:2px;background:var(--red);transform:scaleY(0);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+@media(hover:hover){.achievement-row:hover{padding-left:10px}.achievement-row:hover:before{opacity:1}.achievement-row:hover:after{transform:scaleY(1)}.achievement-row:hover h3{color:var(--white)}}
+.achievement-row h3{transition:color .3s}
+
+/* ---------- cursor follower (desktop) ---------- */
+.cursor-dot,.cursor-ring{position:fixed;left:0;top:0;z-index:150;pointer-events:none;opacity:0;transition:opacity .3s}
+.cursor-on .cursor-dot,.cursor-on .cursor-ring{opacity:1}
+.cursor-dot{width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--red)}
+.cursor-ring{width:38px;height:38px;margin:-19px 0 0 -19px;border-radius:50%;border:1px solid #f3f0e980;mix-blend-mode:difference;display:grid;place-items:center;transition:opacity .3s,width .35s cubic-bezier(.16,1,.3,1),height .35s cubic-bezier(.16,1,.3,1),margin .35s cubic-bezier(.16,1,.3,1),background .3s,border-color .3s}
+.cursor-ring[data-mode=link]{width:58px;height:58px;margin:-29px 0 0 -29px;border-color:#f3f0e9}
+.cursor-ring[data-mode=drag],.cursor-ring[data-mode=view]{width:78px;height:78px;margin:-39px 0 0 -39px;background:#f3f0e9;border-color:#f3f0e9}
+.cursor-ring.is-down{width:30px;height:30px;margin:-15px 0 0 -15px}
+.cursor-label{font:700 10px/1 var(--sans);letter-spacing:.16em;color:#080908}
+.cursor-ring[data-mode=drag]+.cursor-dot,.cursor-ring[data-mode=view]+.cursor-dot{opacity:0}
+
+/* ---------- hero parallax smoothing ---------- */
+#hero-canvas,.hero-copy{will-change:translate,opacity}
+
+@media(prefers-reduced-motion:reduce){.js .intro{display:none}html:not(.hero-live).js .hero-copy,html:not(.hero-live).js .scene-interface{opacity:1}.cursor-dot,.cursor-ring{display:none}.marquee-track{transform:none!important}}
+@media(max-width:760px){.marquee{padding:13px 0}.marquee-track{gap:22px;padding-right:22px}.intro{padding-bottom:12vh}}

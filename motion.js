@@ -4,7 +4,6 @@ export function initMotion() {
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   const body = document.body;
   const enterSelector = [
-    '.header > *', '.hero-eyebrow', '#hero-title > *', '.hero-description', '.hero-actions > *', '.hero-bottom > *',
     '.affiliation', '.section-top > *', '.section-heading > *', '.about-copy > h2', '.bio > p', '.about-signature',
     '.about-visual', '.profile-facts > div', '.skill-atlas', '.skill-panel > *', '.skill-terms > span', '.skill-evidence li',
     '.recognition-intro > *', '.archive-tools > *', '.achievement-row', '.archive-status', '.show-all',

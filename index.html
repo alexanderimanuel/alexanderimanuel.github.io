@@ -9,7 +9,7 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./assets/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./assets/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <script>document.documentElement.classList.add('js');</script>
+  <script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('hero-live');},6000);</script>
   <link rel="modulepreload" href="./scene.js">
   <link rel="modulepreload" href="./vendor/three.module.js">
   <link rel="modulepreload" href="./vendor/three.core.js">
@@ -21,9 +21,12 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./legibility.css">
   <link rel="stylesheet" href="./motion.css">
+  <link rel="stylesheet" href="./interactive.css">
   <script type="module" src="./app.js"></script>
+  <script type="module">import('./interactive.js').then(function(m){m.initInteractive();}).catch(function(){document.documentElement.classList.add('hero-live');});</script>
 </head>
 <body>
+  <div class="intro" id="intro" aria-hidden="true"><div class="intro-label"><span>Alexander Imanuel Widjanarko<br><strong>Ideas into action.</strong></span><span>Loading the 3D portrait</span></div><div class="intro-count">000</div><div class="intro-track"><div class="intro-bar"></div></div></div>
   <a class="skip-link" href="#story">Skip to the story</a>
   <header class="header" id="header">
     <a href="#home" class="wordmark" aria-label="Alex, back to top">AIW<span class="wordmark-dot">.</span></a>
@@ -48,6 +51,7 @@
       <div class="hero-bottom"><span>MALANG, INDONESIA <span id="local-time"></span></span><a href="#story">SCROLL TO EXPLORE <span>↓</span></a><span>ALEXANDER IMANUEL / 2026</span></div>
     </section>
     <div class="affiliation-strip"><div class="affiliation"><img src="./assets/logo-ub-transparent.png" alt="Logo Universitas Brawijaya" width="300" height="300"><p><strong>UNIVERSITAS BRAWIJAYA</strong><span>The Most Outstanding Student 2026</span></p></div><div class="affiliation"><img class="coc-logo" src="./assets/logo-coc.png" alt="Logo Clash of Champions Season 3 Ruangguru" width="952" height="400"><p><strong>RUANGGURU</strong><span>Clash of Champions · Season 3 contestant</span></p></div><div class="affiliation kios-affiliation"><span class="kios-logo-frame"><img src="./assets/logo-kios-ai.webp" alt="Logo KIOS AI" width="800" height="800" loading="lazy"></span><p><strong>KIOS AI</strong><span>Founder & CEO<br>AI, business, and the next chapter.</span></p></div></div>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>AI Builder</span><i>✦</i><span>Founder of KIOS AI</span><i>✦</i><span><em>The Most Outstanding Student</em> 2026</span><i>✦</i><span>50 Wins</span><i>✦</i><span>12 Publications</span><i>✦</i><span>20+ Talks</span><i>✦</i><span>Product</span><i>✦</i><span>Stocks</span><i>✦</i><span><em>Ideas into action.</em></span><i>✦</i></div></div>
     <section class="section about light-section" id="story" aria-labelledby="about-title">
       <div class="section-top reveal"><p class="eyebrow">01 / THE PERSON</p><span class="section-small">Behind every idea, there's a journey.</span></div>
       <div class="about-layout">
