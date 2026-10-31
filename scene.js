@@ -19,10 +19,18 @@ export async function initScene({ canvas, onReady, onAngleChange } = {}) {
   const resources = new Set();
   const keep = value => { resources.add(value); return value; };
   const release = () => { for (const resource of resources) resource.dispose(); resources.clear(); renderer.dispose(); };
+  // a preloaded response body can occasionally fail to stream; fetch it once more before giving up
+  const fetchBody = async (src, read) => {
+    for (let attempt = 0; ; attempt++) {
+      try {
+        const response = await fetch(src, attempt ? { cache: 'reload' } : undefined);
+        if (!response.ok) throw new Error(`A portrait asset is unavailable: ${src}`);
+        return await response[read]();
+      } catch (error) { if (attempt >= 2) throw error; }
+    }
+  };
   const loadBitmap = async (src, color) => {
-    const response = await fetch(src);
-    if (!response.ok) throw new Error(`A portrait asset is unavailable: ${src}`);
-    const bitmap = await createImageBitmap(await response.blob(), { imageOrientation: 'flipY', premultiplyAlpha: 'none', colorSpaceConversion: 'none' });
+    const bitmap = await createImageBitmap(await fetchBody(src, 'blob'), { imageOrientation: 'flipY', premultiplyAlpha: 'none', colorSpaceConversion: 'none' });
     const texture = keep(new THREE.Texture(bitmap));
     texture.addEventListener('dispose', () => bitmap.close());
     texture.colorSpace = color ? THREE.SRGBColorSpace : THREE.NoColorSpace;
@@ -45,7 +53,7 @@ export async function initScene({ canvas, onReady, onAngleChange } = {}) {
     if (!Number.isInteger(count) || count < 100 || !Number.isInteger(indexCount) || indexCount % 3 || description.vertexStride !== 8) throw new Error('The portrait model is invalid.');
     if (!Array.isArray(views) || views.length < 1 || views.length > 6 || !Array.isArray(description.viewWeights) || description.viewWeights.length < 1) throw new Error('The portrait views are invalid.');
     const [binary, atlasTexture, weightA, weightB, ...maps] = await Promise.all([
-      fetch(`./assets/${description.binary}`).then(async item => { if (!item.ok) throw new Error('The portrait surface could not load.'); return item.arrayBuffer(); }),
+      fetchBody(`./assets/${description.binary}`, 'arrayBuffer'),
       loadBitmap(`./assets/${description.texture}`, true),
       loadBitmap(`./assets/${description.viewWeights[0]}`, false),
       description.viewWeights[1] ? loadBitmap(`./assets/${description.viewWeights[1]}`, false) : null,
