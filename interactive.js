@@ -238,4 +238,5 @@ export function initInteractive() {
   if (!reduced) requestAnimationFrame(loop);
 
   runIntro();
+  if (!reduced && window.IntersectionObserver && window.ResizeObserver) import('./depth.js').then(m => m.initDepth()).catch(() => {});
 }

@@ -1,0 +1,13 @@
+/* scroll-scrubbed 3D depth (depth.js) */
+.depth-on body{overflow-x:clip}
+.depth-section{position:relative;backface-visibility:hidden}
+.depth-on .moments{background:var(--ink)}
+.depth-shade{position:absolute;inset:0;background:#030303;opacity:0;pointer-events:none;z-index:60}
+.depth-line{display:block;perspective:700px}
+.depth-line-inner{display:inline-block;transform-origin:50% 100%;backface-visibility:hidden}
+.contact h2 .depth-line-inner>em{font-size:1.18em;margin-left:6px;color:#ffe9d8;line-height:.85}
+.depth-on :is(.about-letter,.speaking-portrait,.gallery,.skill-layout,.contact-content){will-change:transform}
+.depth-on .achievement-row,.depth-on .publication-row{transform-origin:50% 0;backface-visibility:hidden}
+.depth-on .gallery{transform-origin:0 50%}
+.depth-on .skill-layout,.depth-on .contact-content{transform-origin:50% 0}
+@media(prefers-reduced-motion:reduce){.depth-shade{display:none}}
